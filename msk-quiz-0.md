@@ -82,6 +82,7 @@ Last login: Tue Mar 11 01:44:06 2025 from xx.xx.xx.xx
 $ export BS=<your-broker-endpoint>
 $ cd kafka_2.13-3.6.0/bin
 $ ./kafka-topics.sh --bootstrap-server $BS --create --topic <your-topic-name> --partitions 2 --replication-factor 2
+$ ./kafka-topics.sh --bootstrap-server $BS --list
 $ ./kafka-topics.sh --bootstrap-server $BS --describe --topic <your-topic-name>
 ```
 
