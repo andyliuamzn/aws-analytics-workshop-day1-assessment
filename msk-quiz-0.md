@@ -1,6 +1,6 @@
 ## Prerequisites
 
-1. Download the [Learn2Hire_v1.yml](https://github.com/andyliuamzn/aws-analytics-workshop-assessment/blob/main/Learn2Hire_v2.yml) and upload it into cloudformation to create the required network services.
+1. Download the [Learn2Hire_v2.yml](https://github.com/andyliuamzn/aws-analytics-workshop-assessment/blob/main/Learn2Hire_v2.yml) and upload it into cloudformation to create the required network services.
  
 2. Create the [MSK cluster](https://console.aws.amazon.com/msk/home?region=us-east-1#/home/) with the following settings.
 
