@@ -89,7 +89,7 @@ $ ./kafka-topics.sh --bootstrap-server $BS --describe --topic <your-topic-name>
 6. Wrtie data into topic and read data from the topic.
 ```
 ./kafka-console-producer.sh --bootstrap-server $BS --topic <your-topic-name>
-./kafka-console-consumer.sh --bootstrap-server $BS --topic <your-topic-name>
+./kafka-console-consumer.sh --bootstrap-server $BS --topic <your-topic-name> --from-beginning
 ```
 
 7. Once we've done above all operations, please delete the MSK cluster, EC2 Instance and CF stack manually.
