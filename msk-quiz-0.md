@@ -77,7 +77,7 @@ Last login: Tue Mar 11 01:44:06 2025 from xx.xx.xx.xx
 [ec2-user@ip-172-xx-xx-133 ~]$ tar -xzf kafka_2.13-3.6.0.tgz
 ```
 
-5. Create Topic with 2 partition and 2 replication factors, and try to check the topic info.
+5. Create Topic with 2 partitions and 2 replication factors, and try to check the topic info.
 ```
 $ export BS=<your-broker-endpoint>
 $ cd kafka_2.13-3.6.0/bin
