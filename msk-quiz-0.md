@@ -76,3 +76,17 @@ Last login: Tue Mar 11 01:44:06 2025 from xx.xx.xx.xx
 [ec2-user@ip-172-xx-xx-133 ~]$ wget https://archive.apache.org/dist/kafka/3.6.0/kafka_2.13-3.6.0.tgz
 [ec2-user@ip-172-xx-xx-133 ~]$ tar -xzf kafka_2.13-3.6.0.tgz
 ```
+
+5. Create Topic with 2 partition and 2 replication factors, and try to check the topic info.
+```
+$ export BS=<your-broker-endpoint>
+$ cd kafka_2.13-3.6.0/bin
+$ ./kafka-topics.sh --bootstrap-server $BS --create --topic <your-topic-name> --partitions 2 --replication-factor 2
+$ ./kafka-topics.sh --bootstrap-server $BS --describe --topic <your-topic-name>
+```
+
+6. Wrtie data into topic and read data from the topic.
+```
+./kafka-console-producer.sh --bootstrap-server $BS --topic <your-topic-name>
+./kafka-console-consumer.sh --bootstrap-server $BS --topic <your-topic-name>
+```
