@@ -1,6 +1,6 @@
 ## OpenSearch
 
-STEP 1.
+STEP 1. Create index with the settings and mappings.
 
 ```
 PUT knn-test-index
@@ -36,7 +36,7 @@ PUT knn-test-index
 }
 ```
 
-STEP 2.
+STEP 2. Bulk API.
 ```
 PUT _bulk?refresh=true
 { "index": { "_index": "knn-test-index", "_id": "1" } }
@@ -45,7 +45,7 @@ PUT _bulk?refresh=true
 {"vectors":[{"vector":[10,10]},{"vector":[20,20]}]}
 ```
 
-STEP 3.
+STEP 3. Search API.
 ```
 GET knn-test-index/_search
 {
